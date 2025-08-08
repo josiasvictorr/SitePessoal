@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<!--Esta pagina é apenas para treinar formulários-->
+
+<body>
+    <main>
+        <h1>Entre em contato</h1>
+
+        <h2>Preencha o formulário abaixo</h2>
+
+        <form>
+            <label for="campo-nome">Nome:</label>
+            <input id="campo-nome" type="text" placeholder="Digite seu nome" required>
+            <br>
+
+            <label for="campo-senha">Senha:</label>
+            <input id="campo-senha" type="password" placeholder="Digite sua senha" required>
+            <br>
+
+            <label for="campo-email">E-mail:</label>
+            <input id="campo-email" type="email" placeholder="Digite seu e-mail" required>
+            <br><br><br>
+
+            <h3>Gênero:</h3>
+
+            <input type="radio" name="genero" value="masculino" id="masculino">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" name="genero" value="feminino" id="feminino">
+            <label for="feminino">Feminino</label>
+            <br><br><br>
+
+            <h3>Coisas que você faz:</h3>
+
+            <input type="checkbox" name="coisas" value="item1" id="item1">
+            <label for="item1">Canta</label>
+
+            <input type="checkbox" name="coisas" value="item2" id="item2">
+            <label for="item2">Dança</label>
+            <br><br><br>
+
+            <select id="curso" required>
+                <option value="" selected disabled>Selecione seu curso</option>
+                <option value="engenharia">Engenharia</option>
+                <option value="medicina">Medicina</option>
+                <option value="estetica">Estetica</option>
+            </select>
+            <br><br><br>
+            <textarea name="mensagem" rows="7" cols="20" placeholder="Digite sua mensagem"></textarea>
+            <br><br><br>
+            <input type="submit" value="Enviar formulário">
+        </form>
+    </main>
+</body>
+
+</html>
