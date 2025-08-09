@@ -1,3 +1,21 @@
 body {
-    background: #bebebe6e;
+    background: #10013a;
+}
+
+main {
+    background: white;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.main-index {
+    text-align: center;
+    font-size: 30px;
+}
+
+nav {
+    background: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
 }
