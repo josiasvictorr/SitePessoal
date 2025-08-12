@@ -1,21 +1,39 @@
-body {
-    background: #10013a;
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+header {
+    display: inline-block;
+    background: black;
+    margin: -8px;
+    height: 100px;
 }
 
-main {
-    background: white;
-    padding-left: 200px;
-    padding-right: 200px;
-}
-
-.main-index {
-    text-align: center;
-    font-size: 30px;
+.logo {
+    position: relative;
+    top: 15px;
+    left: 20px;
+    display: inline-block;
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 nav {
-    background: white;
-    font-size: 20px;
-    padding: 10px;
-    text-align: center;
+    position: relative;
+    top: -25px;
+    display: inline-block;
+    padding-left: 1100px;
+}
+
+.menu {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    padding-left: 25px;
+}
+
+.menu:hover {
+    background: rgba(133, 133, 133, 0.445);
 }
