@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+header {
+    display: inline-block;
+    background: black;
+    margin: -8px;
+    height: 100px;
+}
+
+.logo {
+    position: relative;
+    top: 15px;
+    left: 20px;
+    display: inline-block;
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    position: relative;
+    top: -25px;
+    display: inline-block;
+    padding-left: 1100px;
+}
+
+.menu {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+
+}
+
+.menu:hover {
+    opacity: 0.6;
+}

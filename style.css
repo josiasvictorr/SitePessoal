@@ -1,39 +1,160 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
+header,
+nav,
+main,
+footer {
+    display: flex;
+    margin: 3px;
+    padding: 0px;
+    flex: 1 1 100vw;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 header {
-    display: inline-block;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     background: black;
-    margin: -8px;
-    height: 100px;
+    padding: 15px;
+    height: 80px;
 }
 
 .logo {
-    position: relative;
-    top: 15px;
-    left: 20px;
-    display: inline-block;
-    color: white;
+    position: absolute;
     font-size: 50px;
     text-decoration: none;
+    top: 5px;
+    color: white;
     font-family: "DM Serif Text", serif;
     font-weight: 400;
     font-style: normal;
+    padding: 15px;
 }
 
-nav {
-    position: relative;
-    top: -25px;
-    display: inline-block;
-    padding-left: 1100px;
+.logo:hover {
+    background: rgb(24, 24, 24);
 }
 
 .menu {
-    font-size: 30px;
     color: white;
     text-decoration: none;
-    padding-left: 25px;
+    padding: 10px;
 }
 
 .menu:hover {
-    background: rgba(133, 133, 133, 0.445);
+    opacity: 0.7;
 }
+
+nav {
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    top: 35px;
+}
+
+main {
+    text-align: center;
+}
+
+footer {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 40%;
+}
+
+.background-img {
+    position: absolute;
+    z-index: -999;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+/* INICIO ESTILO PAGINA INDEX */
+
+#body-index {
+    background: black;
+}
+
+.apresentacao,
+.chamada-sobremim,
+.chamada-formacao,
+.chamada-portfolio,
+.chamada-contato {
+    position: absolute;
+    font-size: 180%;
+    border-radius: 15px;
+    width: 600px;
+    height: 350px;
+    background: rgb(255, 255, 255);
+}
+
+.apresentacao:hover {
+    background: rgb(249, 253, 255);
+}
+
+.chamada-sobremim:hover,
+.chamada-formacao:hover,
+.chamada-portfolio:hover,
+.chamada-contato:hover {
+    background: rgb(203, 239, 255);
+    width: 605px;
+    height: 355px;
+}
+
+
+.apresentacao {
+    top: 130px;
+    left: 635px;
+    height: 750px;
+}
+
+.apresentacao p {
+    padding-bottom: 40px;
+    margin: 20px;
+}
+
+.chamada-sobremim {
+    left: 20px;
+    top: 130px;
+}
+
+.chamada-formacao {
+    left: 20px;
+    top: 530px;
+}
+
+.chamada-portfolio {
+    right: 20px;
+    top: 130px;
+}
+
+.chamada-contato {
+    right: 20px;
+    top: 530px;
+}
+
+.botao {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    text-decoration: none;
+    font-size: 40px;
+    background: rgb(0, 166, 243);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* FINAL ESTILO PAGINA INDEX */
