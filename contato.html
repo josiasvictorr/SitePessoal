@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="body-contato">
     <header class="topo">
         <a href="index.html" class="logo">JOSIAS VICTOR</a>
         <nav id="menu">
@@ -16,14 +16,13 @@
             <a href="formacao.html" class="menu">Formação</a>
             <a href="portfolio.html" class="menu">Meu portfólio</a>
             <a href="contato.html" class="menu">Contato</a>
-            <a href="index.html" class="menu">Voltar</a>
+            <a href="index.html" class="menu">Início</a>
         </nav>
     </header>
-
     <main class="main-contato">
-        <section class="Entre em contato">
+        <h1 id="tema-contato" class="tema">Entre em Contato</h1>
+        <section id="texto-contato">
 
-            <h1>Entre em Contato</h1>
             <p>Se você deseja conversar sobre oportunidades na área de tecnologia, trocar ideias ou tirar dúvidas, fique
                 vontade para me enviar uma mensagem. <br>Estou sempre aberto a novos contatos profissionais e pronto
                 para
@@ -32,7 +31,7 @@
 
         </section>
 
-        <form>
+        <form type="post" id="form-contato">
             <label for="campo-nome">Nome:</label>
             <input id="campo-nome" type="text" placeholder="Digite seu nome" required><br><br>
 
@@ -41,8 +40,9 @@
 
             <label for="campo-assunto">Assunto:</label>
             <input id="campo-assunto" type="text" placeholder="Assunto" required><br><br>
-            <label for="campo-mensagem">Mensagem:</label><br>
-            <textarea rows="8" cols="30" placeholder="Digite sua mensagem" required></textarea>
+            <label for="campo-mensagem" id="mensagem">Mensagem:</label><br>
+            <textarea rows="15" cols="50" placeholder="Digite sua mensagem" required></textarea><br><br>
+            <input type="submit" id="enviar">
         </form>
         <section class="links">
 
@@ -55,7 +55,9 @@
             &nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://github.com/josiasvictorr" target="_blank"><img src="imagens/github.png" width="5%"></a>
         </section>
-        <footer>Josias Victor &copy; 2025 &mdash; Todos os direitos reservados</footer>
+        <footer id="footer">
+            Josias Victor &copy; 2025 &mdash; Todos os direitos reservados
+        </footer>
     </main>
 </body>
 
