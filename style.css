@@ -46,11 +46,6 @@ li {
     padding-bottom: 30px;
 }
 
-span {
-    font-size: 30px;
-    font-weight: bolder;
-}
-
 h1 {
     position: relative;
     flex: column;
