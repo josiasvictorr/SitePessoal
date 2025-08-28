@@ -25,9 +25,21 @@ a {
 }
 
 header {
+    position: fixed;
     background: black;
     padding: 15px;
     height: 80px;
+    width: 100%;
+    margin-top: 0px;
+    z-index: 1000;
+}
+
+nav {
+    top: 20%;
+    right: 5%;
+    font-size: 30px;
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 section {
@@ -36,10 +48,16 @@ section {
     margin: 20px;
     font-size: 25px;
     width: auto;
+    height: auto;
 }
 
 section p {
     padding: 25px;
+    margin: auto 200px;
+}
+
+.main-sobremim p {
+    margin: 20px;
 }
 
 li {
@@ -47,6 +65,7 @@ li {
 }
 
 h1 {
+    margin-top: 150px;
     position: relative;
     flex: column;
     text-align: center;
@@ -100,12 +119,6 @@ main {
     opacity: 0.7;
 }
 
-nav {
-    font-size: 30px;
-    position: absolute;
-    right: 30px;
-    top: 35px;
-}
 
 main {
     text-align: center;
@@ -196,4 +209,20 @@ textarea {
 #enviar:hover {
     color: rgb(2, 33, 48);
     background: white;
+}
+
+#img-objetivos {
+    height: 101%;
+    width: 40%;
+}
+
+iframe {
+    width: 50%;
+    height: 50%;
+}
+
+video {
+    padding: 0px;
+    width: 40%;
+    height: 100%;
 }
