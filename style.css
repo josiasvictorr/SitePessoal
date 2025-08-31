@@ -1,75 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
-/* Smartphones (600px para baixo) */
-@media only screen and (max-width: 1110px) {
-
-    header,
-    body,
-    nav {
-        justify-content: center !important;
-    }
-
-    nav {
-        margin: 0px !important;
-    }
-
-    section p {
-        text-align: left;
-        margin: 0px !important;
-        padding: 0px !important;
-    }
-
-    .logo {}
-
-    .menu {
-        display: none;
-    }
-
-    #vertical {
-        display: flex !important;
-    }
-
-    #vertical li,
-    #vertical,
-    #vertical a {
-        font-size: 18px !important;
-        padding: 5px !important;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 60px !important;
-    }
-}
-
-@media only screen and (max-width: 1500px) {
-
-    section {
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    section p {
-        margin: 15px !important;
-    }
-}
-
-
-@media only screen and (max-width: 600px) {
-    h1 {
-        font-size: 45px !important;
-    }
-
-    section {
-        font-size: 20px !important;
-    }
-}
-
-@media only screen and (min-width: 1200px) {}
-
-/*ainda estou trabalhando na responsividade do site, para ficar melhor ao acessar em smartphones*/
-
 header,
 nav,
 main,
@@ -428,3 +358,115 @@ video {
 }
 
 /*posicionei, e adicionei um fundo e borda arredondada nos status de cada card*/
+
+/*ainda estou trabalhando na responsividade do site, para ficar melhor ao acessar em smartphones*/
+@media only screen and (max-width: 1110px) {
+
+    header,
+    body,
+    nav,
+    section {
+        margin: 0px !important;
+        padding: 0px !important;
+        justify-content: center !important;
+    }
+
+    nav {
+        margin: 0px !important;
+    }
+
+    section p,
+    #texto-contato {
+        justify-content: center !important;
+        text-align: left;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .logo {}
+
+    .menu {
+        display: none;
+    }
+
+    #vertical {
+        display: flex !important;
+    }
+
+    #vertical li,
+    #vertical,
+    #vertical a {
+        font-size: 18px !important;
+        padding: 5px !important;
+    }
+
+    .right,
+    .left,
+    iframe {
+        display: none !important;
+    }
+
+    .links img {
+        width: 10% !important;
+    }
+
+    footer {
+        display: none !important;
+    }
+
+    .portfolio {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .card,
+    .card img {
+        margin: 0px !important;
+        padding: 0px !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    .card img {
+        width: 100% !important;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .card p {
+        text-align: center;
+        position: absolute;
+        top: auto !important;
+        bottom: 50px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 60px !important;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+
+    section {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    section p {
+        margin: 15px !important;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 45px !important;
+    }
+
+    section {
+        font-size: 20px !important;
+    }
+}
