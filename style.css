@@ -1,10 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
-@media screen and (max-width:600px) {
-    section {
-        flex-direction: column;
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 1110px) {
+
+    header,
+    body,
+    nav {
+        justify-content: center !important;
+    }
+
+    nav {
+        margin: 0px !important;
+    }
+
+    section p {
+        text-align: left;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .logo {}
+
+    .menu {
+        display: none;
+    }
+
+    #vertical {
+        display: flex !important;
+    }
+
+    #vertical li,
+    #vertical,
+    #vertical a {
+        font-size: 18px !important;
+        padding: 5px !important;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 60px !important;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+
+    section {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    section p {
+        margin: 15px !important;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 45px !important;
+    }
+
+    section {
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {}
+
+/*ainda estou trabalhando na responsividade do site, para ficar melhor ao acessar em smartphones*/
 
 header,
 nav,
@@ -49,31 +113,41 @@ header {
 
 /*alinhei itens ao centro, posição fixa pro menu acompanhar a tela, fundo preto, padding 15px, altura fixa, largura de 100% da tela, sem margin do topo, e z-index alto pra sobrepor todo conteudo da pagina*/
 
-@media screen and (max-width:1200px) {
-
-    header,
-    #menu {
-        display: flex;
-        flex-direction: column;
-        flex-flow: wrap;
-        justify-content: center;
-    }
-
-
-    header a,
-    nav a {
-        flex-flow: wrap;
-        flex-direction: column;
-    }
-}
-
-/*ainda estou trabalhando na responsividade do site, para ficar melhor ao acessar em smartphones*/
 
 nav {
     justify-content: flex-end;
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-right: 40px;
+}
+
+#vertical {
+    display: none;
+    flex-direction: row;
+    position: fixed;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    list-style-type: none;
+    background: black;
+    padding: 0px;
+    width: 100%;
+    margin: 35px 0px;
+
+}
+
+#vertical li a {
+    padding: 30px;
+
+    color: white;
+}
+
+#vertical li {
+    padding: 10px;
+    border: solid 1px rgba(255, 255, 255, 0.205);
+    text-align: center;
+    border-radius: 30px;
 }
 
 /*coloquei os itens no canto direito do elemento pai, tamanho da fonte 30px, tipo de fonte, e margin da direita de 40px*/
