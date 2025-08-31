@@ -4,30 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Josias Victor, Engenharia de Software">
     <title>Josias Victor - Sobre mim</title>
+    <meta name="description" content="Sobre mim - JOSIAS VICTOR">
+    <meta name="author" content="Josias Victor">
     <link rel="stylesheet" href="style.css">
 </head>
+<!--Aqui eu inseri algumas metas tags para indicar quem é o autor, e uma breve descrição da pagina, alem das tags padrão-->
 
 <body>
-    <!--Abertura do MENU principal para navegar entre às páginas.-->
-    <header class="topo">
+    <header><!--Topo da pagina (vai estar presente em todas as paginas)-->
         <a href="index.html" class="logo">JOSIAS VICTOR</a>
-        <nav id="menu">
-            <a href="sobremim.html" class="menu">Sobre mim</a>
+        <nav id="menu"><!--Abertura do MENU principal para navegar entre às páginas.-->
+            <a href="sobremim.html" class="menu selected">Sobre mim</a>
             <a href="formacao.html" class="menu">Formação</a>
             <a href="portfolio.html" class="menu">Meu portfólio</a>
             <a href="contato.html" class="menu">Contato</a>
             <a href="index.html" class="menu">Início</a>
         </nav>
     </header>
-    <main class="main-sobremim"> <!--Abertura da tag para sinalizar o conteúdo principal da página-->
+    <main class="main-sobremim"> <!--defini uma classe pra mexer nessa pagina em especifico-->
 
 
 
-        <section id="sobre-mim"> <!--Abertura da seção sobre mim-->
-            <h1 class="tema" id="tema-sobremim">Sobre mim</h1> <!--Titulo principal-->
+        <section> <!--seção pra falar sobre mim-->
+            <h1>Sobre mim</h1>
             <img src="/imagens/perfil2.png" alt="Foto do autor sorrindo" class="left">
+            <!--foto minha sorrindo e uma classe indicando que ela vai ficar a esquerda-->
 
             <h2>Quem sou eu?</h2>
 
@@ -57,9 +59,10 @@
                 Além disso,tenho facilidade para identificar soluções práticas e criativas diante dos desafios, o que me
                 ajuda a superar obstáculos no dia a dia profissional.
             </p>
-        </section><!--Fechamento da seção sobre mim-->
-        <section id="softskills"><!--Abertura da seção sobre softskills que possuo-->
-            <img src="imagens/competencias2.jpg" class="right" id="img-softskills">
+        </section>
+        <section><!--Abertura da seção sobre softskills que possuo-->
+            <img src="imagens/competencias2.jpg" class="right">
+            <!--imagem inserida com um id especifico pra ela e uma classe pra indicar que ela vai ficar a direita-->
             <h2>Competências Pessoais</h2>
 
             <p>
@@ -80,8 +83,8 @@
                 <li>Habilidade para encontrar soluções</li>
             </ul>
         </section><!--Fechamento da seção sobre softskills-->
-        <section id="motivo-faculdade"><!--Abertura da seção falando do motivo de escolher este curso-->
-            <img src="imagens/engenharia.jpg" class="left">
+        <section><!--Abertura da seção falando do motivo de escolher este curso-->
+            <img src="imagens/engenharia.jpg" class="left"> <!--imagem com classe indicando que vai ficar a esquerda-->
 
             <h2>Por que Engenharia de Software?</h2>
 
@@ -100,8 +103,9 @@
                 profissional.
             </p>
         </section><!--Fechamento da seção do motivo do curso-->
-        <section id="objetivos"><!--Abertura da seção de objetivos-->
+        <section><!--Abertura da seção de objetivos-->
             <img src="imagens/objetivos.jpg" class="right" id="img-objetivos">
+            <!--imagem e classe indicando que vai ficar a direita. Coloquei um id pois precisei mexer nela separada-->
 
             <h2>Objetivos</h2>
 
@@ -137,9 +141,10 @@
                 </li>
             </ul>
         </section><!--Fechamento da seção de objetivos-->
-        <section id="hobbies"><!--Abertura da seção de hobbies-->
-            <video class="left" autoplay loop>
-                <source src="imagens/hobbies.mp4" type="video/mp4">
+        <section><!--Abertura da seção de hobbies-->
+            <video class="left" autoplay
+                loop><!-- um video com uma classe pra deixar ele na esquerda da tela, uma declaração pra ele tocar sozinho "autoplay" e pra ficar repetindo "loop"-->
+                <source src="imagens/hobbies.mp4" type="video/mp4"> <!--o video em questão-->
             </video>
 
             <h2>O que eu gosto de fazer?</h2>
@@ -171,10 +176,12 @@
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!--um iframe com o meu canal de musica, no youtube-->
         </section><!--Fechamento da seção de hobbies-->
 
         <footer>Josias Victor &copy; 2025 &mdash; Todos os direitos reservados</footer>
-    </main><!--Fechamento da tag que sinaliza o conteúdo principal da página-->
+        <!--rodape presente em todo o site-->
+    </main>
 </body>
 
 </html>

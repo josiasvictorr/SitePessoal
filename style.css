@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
+@media screen and (max-width:600px) {
+    section {
+        flex-direction: column;
+    }
+}
+
 header,
 nav,
 main,
@@ -9,6 +15,8 @@ footer {
     padding: 0px;
     flex: 1 1 100vw;
 }
+
+/* aqui eu defini header, nav, main e footer com display flex, ocupando 100% da largura da tela (100vw), com margem externa de 3px e sem padding interno */
 
 body {
     margin: 0px;
@@ -20,11 +28,16 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
+/*código pra definir algumas coisas do body, como margem, padding, display como flex, flex wrap p quebrar o conteudo, fundo preto, fonte meio branca, e qual o tipo de fonte*/
+
 a {
     text-decoration: none;
 }
 
+/*tirei a decoração padrão de todos os links*/
+
 header {
+    align-items: center;
     position: fixed;
     background: black;
     padding: 15px;
@@ -34,35 +47,65 @@ header {
     z-index: 1000;
 }
 
-nav {
-    top: 20%;
-    right: 5%;
-    font-size: 30px;
-    position: absolute;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+/*alinhei itens ao centro, posição fixa pro menu acompanhar a tela, fundo preto, padding 15px, altura fixa, largura de 100% da tela, sem margin do topo, e z-index alto pra sobrepor todo conteudo da pagina*/
+
+@media screen and (max-width:1200px) {
+
+    header,
+    #menu {
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+
+    header a,
+    nav a {
+        flex-flow: wrap;
+        flex-direction: column;
+    }
 }
+
+/*ainda estou trabalhando na responsividade do site, para ficar melhor ao acessar em smartphones*/
+
+nav {
+    justify-content: flex-end;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 40px;
+}
+
+/*coloquei os itens no canto direito do elemento pai, tamanho da fonte 30px, tipo de fonte, e margin da direita de 40px*/
 
 section {
     background: rgb(15, 14, 15);
     color: rgb(230, 239, 245);
     margin: 20px;
     font-size: 25px;
-    width: auto;
-    height: auto;
+    height: max-content;
 }
+
+/*defini uma cor de fundo segundaria pras seções, cor do texto um pouco diferente, margin de todos os cantos, o tamanho da fonte, altura para acompanhar o tamanho do conteudo*/
 
 section p {
     padding: 25px;
     margin: auto 200px;
 }
 
+/*padding e margem especificos pros paragrafos dentro das seções*/
+
 .main-sobremim p {
     margin: 20px;
 }
 
+/*mexi na margem apenas desta pagina*/
+
 li {
     padding-bottom: 30px;
 }
+
+/*afastei um pouco os itens das listas*/
 
 h1 {
     margin-top: 150px;
@@ -73,13 +116,19 @@ h1 {
     color: rgb(122, 218, 235);
 }
 
+/*defini cor, tamanho e alinhamento pra todos os h1, pois usei os h1 como tema das paginas*/
+
 .right {
     float: right;
 }
 
+/*classe pra indicar quem deve ficar na direita, quem tiver essa classe ficará alinhado a direita da pagina*/
+
 .left {
     float: left;
 }
+
+/*classe pra indicar quem deve ficar na esquerda, quem tiver essa classe ficará alinhado a esquerda da pagina*/
 
 img {
     width: 35%;
@@ -87,42 +136,45 @@ img {
     padding-right: 40px;
 }
 
+/*alterei a largura padrao das imagens, assim como preenchimento pra ajustar melhor na pagina sobre mim*/
+
 main {
-    display: flex;
     flex-direction: column;
-    width: 100%;
+    text-align: center;
 }
 
 .logo {
     position: absolute;
     font-size: 50px;
-    text-decoration: none;
     top: 5px;
     color: white;
     font-family: "DM Serif Text", serif;
     font-weight: 400;
-    font-style: normal;
     padding: 15px;
 }
+
+/*alterei a logo do site, a posição, tamanho, cor, fonte, e um preenchimento*/
 
 .logo:hover {
     background: rgb(24, 24, 24);
 }
 
+/*indiquei que quando passar o mouse por cima da logo, vai mudar a cor do fundo, pra dar o efeito de selecionado*/
+
 .menu {
     color: white;
-    text-decoration: none;
     padding: 10px;
 }
 
-.menu:hover {
+/*indiquei o preenchimento e a cor do texto para o menu*/
+
+.menu:hover,
+.selected {
     opacity: 0.7;
 }
 
-
-main {
-    text-align: center;
-}
+/*pra fazer o efeito de seleção do menu, alterei a opacidade quando o mouse está por cima, assim dá um efeito de como se estivesse selecionando*/
+/*também vai ficar com opacidade alterada, a pagina que estiver selecionada*/
 
 footer {
     color: white;
@@ -131,8 +183,8 @@ footer {
     right: 40%;
 }
 
+/*defini a cor do rodapé, tamanho e deixei a posição fixa*/
 .botao {
-    display: inline-block;
     position: relative;
     font-size: 40px;
     background: rgb(2, 33, 48);
@@ -140,64 +192,73 @@ footer {
     padding: 15px;
     border-radius: 10px;
     font-weight: bold;
+    max-width: fit-content;
 }
+
+/*estilizei os botoes da pagina, definindo posição, tamanho, fundo, cor de fonte, preenchimento, arredondei as bordas e ajustei a largura*/
 
 .botao:hover {
     color: rgb(2, 33, 48);
     background: white;
 }
 
+/*efeito pra quando o mouse está por cima do botão*/
+
 #texto-contato {
     padding: 50px;
     margin: auto 100px;
 }
+
+/*editei o preenchimento e margin para os textos da pagina contato*/
 
 form {
     text-align: center;
     font-size: 30px;
 }
 
+/*alinhei o formulario ao centro e aumentei a fonte*/
 input {
     font-size: 20px;
+}
+
+/*mudei o tamanho da fonte dos inputs*/
+input,
+textarea {
     background-color: rgb(41, 37, 41);
     border: solid 1px rgb(78, 78, 78);
     color: rgb(230, 239, 245);
 }
+
+/*editei o tamanho, cor e borda dos input's e textarea*/
 
 textarea {
     margin: 20px auto;
-    background-color: rgb(41, 37, 41);
-    border: solid 1px rgb(78, 78, 78);
-    color: rgb(230, 239, 245);
 }
 
-.links {
-    display: flex;
-    flex-direction: row;
-    margin: -40px 100px;
-}
+/*defini uma margem pra area de texto*/
 
 .links a {
-    margin: auto 50px;
-    width: 300px;
-    position: relative;
-    left: 10%;
-    padding: 20px;
+    padding: 10px;
 }
+
+/*defini um preenchimento pros links*/
 
 .links img {
-    width: 150px;
+    width: 100px;
 }
 
-.links a:hover {
+/*tamanho dos links*/
+
+
+.links img:hover {
     background-color: rgb(39, 36, 39);
     border: hidden 2px white;
     border-radius: 20px;
 }
 
+/*efeito de seleção pros links*/
+
 #enviar {
-    display: inline-block;
-    position: relative;
     font-size: 30px;
     background: rgb(2, 33, 48);
     color: white;
@@ -206,23 +267,31 @@ textarea {
     font-weight: bold;
 }
 
+/*editei o botao de enviar o formulario, definindo tamanho da fonte, fundo, cor, preenchimento,, arredondei as bordas, e deixei em "negrito"*/
+
 #enviar:hover {
     color: rgb(2, 33, 48);
     background: white;
 }
+
+/*efeito pra selecionar o botao de enviar*/
 
 #img-objetivos {
     height: 101%;
     width: 40%;
 }
 
+/*precisei alterar essa imagem de forma separada, pra ajustar ela na pagina*/
+
 iframe {
     width: 50%;
     height: 50%;
 }
 
+/*defini o tamanho do iframe que coloquei na pagina sobre mim*/
+
 video {
-    padding: 0px;
     width: 40%;
-    height: 100%;
 }
+
+/*defini o tamanho do video que está repetindo no final da pagina sobre mim*/
